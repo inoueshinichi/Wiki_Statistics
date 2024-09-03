@@ -40,9 +40,9 @@
 + 尤度: $p(D={x_1, ...,x_N}| \theta_1, ...,\theta_N)$
 + 最尤推定: $\theta_i = argmax p(D={x_1, ...,x_N}| \theta_1, ...,\theta_N)$
 + ベイズの定理: </br>
-$$
-p(\theta_1, \theta_2 | D, w_1, ...,w_N) = p(D, w_1, ...,w_N | \theta_1, \theta_2) p(\theta_1, \theta_2)/sum_0_\inf p(D, w_1, ...,w_N | \theta1, \theta2))
-$$
+```math
+p(\theta_1, \theta_2 | D, w_1, \cdots ,w_N) = \frac{p(D, w_1, \cdots ,w_N | \theta_1, \theta_2) p(\theta_1, \theta_2)} {\sum^{\infty}_{k=0} p(D, w_1, \cdots ,w_N | \theta1, \theta2))
+```
 + ベイズ推定
 + 共役なベイズ推定用関数
 + フィッシャーのt検定
