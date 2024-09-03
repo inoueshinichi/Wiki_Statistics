@@ -42,7 +42,7 @@ $F(x) = \int^{x}^{-\infty} p(u)du$
 + 条件付き同時確率: $p(x_1, x_2| y_1, \cdots, y_N)$
 + 条件付き期待値: <br/>
 ```math
-$ E_{p(x_1, x_2| y_1, \cdots, y_N)}[f(x)] $
+E_{p(x_1, x_2| y_1, \cdots, y_N)}[f(x)] = \inf^{\infty}^{-\infty} f(x)p(x| y_1, \cdots, y_N)dx
 ```
 + 尤度: $p(D={x_1, ...,x_N}| \theta_1, \cdots ,\theta_N)$
 + 最尤推定: $\theta_i = argmax p(D={x_1, \cdots ,x_N}| \theta_1, \cdots ,\theta_N)$
