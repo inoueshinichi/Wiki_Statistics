@@ -34,7 +34,7 @@
 + 共分散: $Cov(x,y)$
 + 累積度数分布: </br>
 ```math
-$F(x) = \int^{x}^{-\infty} p(u)du$
+F(x) = \int^{x}^{-\infty} p(u)du
 ```
 + 中心極限定理: 不偏推定量(平均や分散)を持つ任意の確率分布p(x)からのサンプル集合の不偏推定量に対応する量の平均値の平均値は,サンプル数Nが増えると不偏推定量に収束する.
 + 任意の確率分布からサンプリングしたサンプル集合の和の分布は正規分布の近似になる
@@ -42,7 +42,7 @@ $F(x) = \int^{x}^{-\infty} p(u)du$
 + 条件付き同時確率: $p(x_1, x_2| y_1, \cdots, y_N)$
 + 条件付き期待値: <br/>
 ```math
-E_{p(x_1, x_2| y_1, \cdots, y_N)}[f(x)] = \inf^{\infty}^{-\infty} f(x)p(x| y_1, \cdots, y_N)dx
+E_{p(x_1| y_1, \cdots, y_N)}[f(x)] = \inf^{\infty}^{-\infty} f(x)p(x| y_1, \cdots, y_N) dx
 ```
 + 尤度: $p(D={x_1, ...,x_N}| \theta_1, \cdots ,\theta_N)$
 + 最尤推定: $\theta_i = argmax p(D={x_1, \cdots ,x_N}| \theta_1, \cdots ,\theta_N)$
