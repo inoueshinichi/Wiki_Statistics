@@ -41,7 +41,7 @@
 + 最尤推定: $\theta_i = argmax p(D={x_1, \cdots ,x_N}| \theta_1, \cdots ,\theta_N)$
 + ベイズの定理: </br>
 ```math
-p(\theta_1, \theta_2 | D, w_1, \cdots ,w_N) = \frac{p(D, w_1, \cdots ,w_N | \theta_1, \theta_2) p(\theta_1, \theta_2)} {\sum^{\infty}_{k=0} p(D, w_1, \cdots ,w_N | \theta1, \theta2))}
+p(\theta_1, \theta_2 | D, w_1, \cdots ,w_N) = \frac{p(D, w_1, \cdots ,w_N | \theta_1, \theta_2) p(\theta_1, \theta_2)} {\int^{\infty}_{-\infty} p(D, w_1, \cdots ,w_N | \theta1, \theta2))}
 ```
 + ベイズ推定
 + 共役なベイズ推定用関数
