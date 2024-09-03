@@ -37,7 +37,7 @@
 + 任意の確率分布からサンプリングしたサンプル集合の和の分布は正規分布の近似になる
 + 条件付き確率: $p(x|y_1, \cdots ,y_N)$
 + 条件付き同時確率: $p(x_1, x_2| y_1, \cdots, y_N)$
-+ 条件付き期待値: $$E_{p(x_1| y_1, \cdots, y_N)}[f(x)] = \inf^{\infty}^{-\infty} f(x)p(x| y_1, \cdots, y_N) dx $$
++ 条件付き期待値: $E_{p(x_1| y_1, \cdots, y_N)}[f(x)] = \inf^{\infty}^{-\infty} f(x)p(x| y_1, \cdots, y_N) dx $
 + 尤度: $p(D={x_1, ...,x_N}| \theta_1, \cdots ,\theta_N)$
 + 最尤推定: $\theta_i = argmax p(D={x_1, \cdots ,x_N}| \theta_1, \cdots ,\theta_N)$
 + ベイズの定理: </br>
