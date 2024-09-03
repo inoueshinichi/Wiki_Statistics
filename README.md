@@ -32,26 +32,52 @@
 + 標準偏差: $\sigma$
 + 確率密度関数: $p(x)$
 + 共分散: $Cov(x,y)$
-+ 累積度数分布: $$F(x) = \int^{x}^{-\infty} p(u)du$$
+
++ 累積度数分布: </br>
+```math
+F(x) = \int^{x}^{-\infty} p(u)du
+```
+
 + 中心極限定理: 不偏推定量(平均や分散)を持つ任意の確率分布p(x)からのサンプル集合の不偏推定量に対応する量の平均値の平均値は,サンプル数Nが増えると不偏推定量に収束する.
 + 任意の確率分布からサンプリングしたサンプル集合の和の分布は正規分布の近似になる
++ 同時確率: $p(x_1,x_2,y_1,y_2)$
 + 条件付き確率: $p(x|y_1, \cdots ,y_N)$
 + 条件付き同時確率: $p(x_1, x_2| y_1, \cdots, y_N)$
-+ 条件付き期待値: $E_{p(x_1| y_1, \cdots, y_N)}[f(x)] = \inf^{\infty}^{-\infty} f(x)p(x| y_1, \cdots, y_N) dx $
++ 条件付き期待値: $E_{p(x| y_1, \cdots, y_N)}[f(x)] = \inf^{\infty}^{-\infty} f(x)p(x| y_1, \cdots, y_N) dx $
++ 損失関数: $Loss(x)$
++ 条件付き期待損失: $E_{p(x| y_1, \cdots, y_N)}[Loss(x)]$
 + 尤度: $p(D={x_1, ...,x_N}| \theta_1, \cdots ,\theta_N)$
 + 最尤推定: $\theta_i = argmax p(D={x_1, \cdots ,x_N}| \theta_1, \cdots ,\theta_N)$
 + ベイズの定理: </br>
 ```math
 p(\theta_1, \theta_2 | D, w_1, \cdots ,w_N) = \frac{p(D, w_1, \cdots ,w_N | \theta_1, \theta_2) p(\theta_1, \theta_2)} {\iint^{\infty}_{-\infty} p(D, w_1, \cdots ,w_N | \theta1, \theta2))d\theta_1d\theta_2}
 ```
+
 + ベイズ推定
 + 共役なベイズ推定用関数
 + フィッシャーのt検定
 + 分散分析(クラスに分けて平均、分散、max, min, などを図る)
 + 相関分析
-+ モデル当てはめ
++ モデル当ては
 + EMアルゴリズム
 + 情報量: $log(1/p(x))$
 + 相互情報量(カルバック・ライブラー距離) (確率分布間の距離: p(x)とq(x)のxが同じ定義域となる): $q_p(p||q)=log(p(x)/q(x))$
 + エントロピー
+
+## 重要な分布
++ 正規分布
++ 一様分布
++ χ2乗分布
++ t分布
++ ベータ分布
++ 指数分布
++ ガンマ分布
++ 逆ガンマ分布
++ ベルヌーイ分布
++ 二項分布
++ ポアソン分布
++ 幾何分布
++ ディリクレ分布
++ 
+
 
