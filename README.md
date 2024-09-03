@@ -35,13 +35,13 @@
 + 累積度数分布
 + 中心極限定理: 不偏推定量(平均や分散)を持つ任意の確率分布p(x)からのサンプル集合の不偏推定量に対応する量の平均値の平均値は,サンプル数Nが増えると不偏推定量に収束する.
 + 任意の確率分布からサンプリングしたサンプル集合の和の分布は正規分布の近似になる
-+ 条件付き確率: $p(x|y_1, ...,y_N)$
-+ 条件付き同時確率: $p(x_1, x_2| y_1, ..., y_N)$
-+ 尤度: $p(D={x_1, ...,x_N}| \theta_1, ...,\theta_N)$
-+ 最尤推定: $\theta_i = argmax p(D={x_1, ...,x_N}| \theta_1, ...,\theta_N)$
++ 条件付き確率: $p(x|y_1, \cdots ,y_N)$
++ 条件付き同時確率: $p(x_1, x_2| y_1, \cdots, y_N)$
++ 尤度: $p(D={x_1, ...,x_N}| \theta_1, \cdots ,\theta_N)$
++ 最尤推定: $\theta_i = argmax p(D={x_1, \cdots ,x_N}| \theta_1, \cdots ,\theta_N)$
 + ベイズの定理: </br>
 ```math
-p(\theta_1, \theta_2 | D, w_1, \cdots ,w_N) = \frac{p(D, w_1, \cdots ,w_N | \theta_1, \theta_2) p(\theta_1, \theta_2)} {\sum^{\infty}_{k=0} p(D, w_1, \cdots ,w_N | \theta1, \theta2))
+p(\theta_1, \theta_2 | D, w_1, \cdots ,w_N) = \frac{p(D, w_1, \cdots ,w_N | \theta_1, \theta_2) p(\theta_1, \theta_2)} {\sum^{\infty}_{k=0} p(D, w_1, \cdots ,w_N | \theta1, \theta2))}
 ```
 + ベイズ推定
 + 共役なベイズ推定用関数
